@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Radical";
+  src: url("../../vendor/Radical\ Beat.ttf");
+}
+
+@font-face {
+  font-family: "Pinyon";
+  src: url("../../vendor/PinyonScript-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../vendor//Roboto-Medium.woff");
+}
+
+@font-face {
+  font-family: "Playwrite";
+  src: url("../../vendor/PlaywriteNZ-VariableFont_wght.ttf");
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  height: 80px;
+  margin-left: auto;
+  align-items: center;
+  background-color: transparent;
+  border-bottom: 2px solid rgb(255, 255, 255, 0.2);
+  max-width: 100%;
+  position: relative;
+}
+
+.header__emoji {
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  transform: rotate(-35deg);
+}
+
+.header__logo {
+  font-family: "Playwrite", serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 24px;
+  margin-left: 104px;
+  margin-top: 30px;
+  margin-bottom: 26px;
+  color: rgba(192, 148, 255, 0.9);
+}
+
+.header__button-container {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+
+.header__link {
+  text-decoration: none;
+  color: white;
+}
+
+.header__home-link {
+  margin-right: 35px;
+  text-decoration: none;
+}
+
+.header-button {
+  margin-right: 30px;
+  border: 1px solid white;
+  background-color: transparent;
+  width: 115px;
+  height: 48px;
+  border-radius: 48px;
+  cursor: pointer;
+  color: rgba(192, 148, 255, 0.9);
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.header__username {
+  margin-right: 30px;
+  cursor: pointer;
+  color: rgba(192, 148, 255, 0.9);
+  font-family: "Playwrite", Arial, sans-serif;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .header__logo {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  .header-button {
+    margin: 0;
+  }
+
+  .header__button-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+  }
+
+  .header__logo {
+    margin-left: 0px;
+    margin-right: 0px;
+    z-index: 2;
+  }
+
+  .header__emoji {
+    opacity: 0;
+  }
+}
